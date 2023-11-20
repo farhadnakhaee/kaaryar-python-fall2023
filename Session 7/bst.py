@@ -26,7 +26,7 @@ class Node:
             return True
         elif find_val<self.value and self.left is not None:
             return self.left.search(find_val)
-        elif self.right is not None:
+        elif find_val>self.value and self.right is not None:
             return self.right.search(find_val)
         return False
         
